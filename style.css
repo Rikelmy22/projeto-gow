@@ -110,6 +110,7 @@ main > article > picture > img{
    display: block;
    margin: auto;
    width: 92%;
+   margin-bottom: 10px;
 }
 
 main > article > .kratos > .video {
