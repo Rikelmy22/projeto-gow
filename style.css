@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'God of war';
+    src: url('fontes/GODOFWAR.TTF') format('truetype');
+}
+
+:root {
+    --cor-01: #2D3E40;
+    --cor-02: #387373;
+    --cor-03: #93BFB7;
+    --cor-04: #97A6A0;
+    --cor-05: #E4F2E7;
+
+    --font-principal:'God of war';
+    --font-body:'sans-serif';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    line-height: 25px;
+}
+
+body {
+    background-color: var(--cor-03);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor-01), var(--cor-04));
+    height: 110px;
+    padding: 10px;
+    box-shadow: 0px 0px 2px var(--cor-01);
+}
+
+header #principal {
+    text-align: center;
+    color: var(--cor-04);
+    text-shadow: 0px 0px 4px rgb(71, 71, 71);
+    font-family: var(--font-principal);
+    margin-bottom: 10px;
+    font-size: 2.1em;
+}
+
+header > p {
+    text-align: center;
+    margin: 10px;
+    color: var(--cor-04);
+    text-shadow: black;
+}
+
+header > nav {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+header > nav > a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: var(--cor-01);
+    font-family: sans-serif;
+}
+
+header > nav > a:hover {
+    background-color: var(--cor-01);
+    color: var(--cor-04);
+    transition-duration: 1.5s;
+    padding: 3px;
+}
+
+main {
+    background-color: var(--cor-05);
+    min-width: 320px;
+    max-width: 800px;
+    margin:  0px auto;
+    padding: 10px;
+    text-align: justify;
+    text-indent: 20px;
+    box-shadow: 0px 4px 4px 2px gray;
+}
+
+main > article > h1 {
+    font-family: 'God of war';
+    color: var(--cor-01);
+}
+
+main > article > h2, h3 {
+    font-family: 'God of war';
+    background-image: linear-gradient(to right, var(--cor-01), transparent);
+}
+
+main > article > p {
+    margin-bottom: 10px;
+}
+
+main > article > p > a {
+   text-decoration: none;
+   color: #0303b6;
+}
+
+main > article > p > a::after {
+   content: '\1F517';
+}
+
+main > article > p > a:hover {
+   text-decoration: underline;
+}
+
+main > article > picture > img{
+   display: block;
+   margin: auto;
+   width: 92%;
+}
+
+main > article > .kratos > .video {
+    position: relative;
+    padding-bottom: 55%;
+    background-color: var(--cor-01);
+}
+
+main > article > .kratos > .video >iframe {
+    position: absolute;
+    width: 94.6%;
+    height: 100%;
+}
+
+main > article > aside {
+    margin-top: 20px;
+    background-color: var(--cor-02);
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+main > article > aside > h4 {
+    background-color: var(--cor-03);
+    color: #182223;
+    font-family: sans-serif;
+}
+
+main > article > aside > ul {
+    columns: 2;
+    list-style-position: inside;
+}
+
+main > article > aside > ul > li {
+    list-style-type: '\1F5E1';
+}
+
+main > article > aside > ul > li > abbr {
+    text-decoration: none;
+    font-family: 'God of war';
+}
+
+footer > p {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+footer > p > a {
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
